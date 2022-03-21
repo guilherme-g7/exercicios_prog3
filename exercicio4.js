@@ -27,6 +27,6 @@ while(true){
     anos ++;
 }
 
-console.log('Precisou de ' + anos + ' anos para o país A ultrapassar o país B.');
+console.log('País A precisou de ' + anos + ' anos para ultrapassar o país B.');
 
 
