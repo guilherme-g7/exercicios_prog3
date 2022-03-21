@@ -20,10 +20,12 @@ inss = salarioBruto * 0.08;
 sind = salarioBruto * 0.05;
 
 
-console.log(salarioBruto);
-console.log(ir);
-console.log(inss);
-console.log(sind);
+console.log('+ Salário bruto : ' + salarioBruto.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'}));
+console.log('- IR (11%) : ' + ir.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'}));
+console.log('- INSS (8%) : ' + inss.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'}));
+console.log('- Sindicato (5%) : ' + sind.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'}));
 
-console.log(salarioBruto - (ir + inss + sind));
+
+salarioLiq = salarioBruto - (ir + inss + sind);
+console.log('= Salário Liquido : ' + salarioLiq.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'}));
 
